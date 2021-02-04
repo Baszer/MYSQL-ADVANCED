@@ -18,6 +18,6 @@
    
    SELECT constructors.name , races.name as 'race' FROM constructor_standing JOIN constructors ON constructors.constructorId = constructor_standing.constructorId JOIN races ON races.raceId = constructor_standing.raceId WHERE races.year = 2017 AND constructors.name = 'McLaren'
 
-5. Copy paste je gemaakte SQL query hieronder
+5. Copy paste je gemaakte SQL query hieronder.
 
 SELECT circuits.name AS 'Circuits', circuits.country, races.name, drivers.surname FROM races JOIN circuits ON circuits.circuitId = races.circuitId JOIN driver_standing ON driver_standing.raceId = races.raceId JOIN drivers ON drivers.driverId = driver_standing.driverId WHERE races.year = 1950 AND drivers.surname LIKE 'F%'
